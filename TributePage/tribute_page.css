@@ -1,0 +1,50 @@
+body {
+		background-color: #F5F5F5;
+	
+}
+#image {
+	max-width: 100%;
+	width: 30vw;
+	height: auto;
+	display: block;
+	margin:0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+	#image {
+		width: 40vw;
+	}
+
+}
+header {
+	font-family: monospace;
+	text-align: center;
+	background-color:;
+}
+#img-caption {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 20px;
+}
+#tribute-info {
+	text-align: justify;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	background-color: #F5F5F5;
+	font-family: 'Slabo', sans-serif;
+}
+footer {
+	margin-left: 5vw;
+	margin-right: 5vw;
+	font-family: 'Slabo', sans-serif;
+}
+h2 {
+	font-family: 'Aleo', monospace;
+	font-size: 32px;
+	text-align: center;
+	padding-top: 20px;
+}
+p {
+
+	font-size: 20px;
+}
