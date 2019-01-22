@@ -1,5 +1,5 @@
 body {
-		background-color: #F5F5F5;
+		background-color: #BBB193;
 	
 }
 #image {
@@ -8,18 +8,34 @@ body {
 	height: auto;
 	display: block;
 	margin:0 auto;
+	border-radius: 50%;
+	border-width: 1.5px;
+	border-style: solid;
+	border-color: #685F74;
+}
+img:hover{
+	transform: scale(1.02);
 }
 
 @media only screen and (max-width: 800px) {
 	#image {
 		width: 40vw;
 	}
-
+	p {
+		font-size: 16px;
+	}
 }
-header {
+#title {
 	font-family: monospace;
 	text-align: center;
-	background-color:;
+	color: #F6F0ED;
+	padding-top: 9px;
+	font-size: 36px;
+}
+header {
+	height: 10vh;
+	background-color: #28536B;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 #img-caption {
 	text-align: center;
@@ -27,13 +43,20 @@ header {
 	font-size: 20px;
 }
 #tribute-info {
+	float: left;
+	background-color: #F5F5F5;
 	text-align: justify;
+}
+#tribute-info p{
 	margin-left: 5vw;
 	margin-right: 5vw;
-	background-color: #F5F5F5;
 	font-family: 'Slabo', sans-serif;
 }
 footer {
+	background-color: #F5F5F5;
+	padding-bottom: 5px;
+}
+footer p {
 	margin-left: 5vw;
 	margin-right: 5vw;
 	font-family: 'Slabo', sans-serif;
