@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="surveyForm.css">
+</head>
+<body>
+	<main>
+		<header>
+			<h1 id="title">Survey Form</h1>
+			<p id="description">Give us your feedback about the institution</p>
+		</header>
+		<section>
+			<form id="survey-form">
+				<div class="form_rows">
+				<label id="name-label" for="name">Name: </label>
+				<input id="name" type="text" placeholder="Enter your name" required><br>
+				</div>
+				<div class="form_rows">
+				<label id="email-label", for="email">Email: </label>
+				<input id="email" type="email" placeholder="Enter your email" required><br>
+				</div>
+				<div class="form_rows">
+				<label id="number-label" for="number">Age: </label>
+				<input id="number" type="number" placeholder="Enter your age"  style="width: 110px;"required min="10" max="100"><br>
+				</div>
+				<div id="current_role">
+					<p> Which is your current role?</p>
+					<select id="dropdown" placeholder="Select an option" required>
+						<option value="student">Student</option>
+						<option value="teacher">Teacher</option>
+						<option value="ex-student">Ex-student</option>
+						<option value="institutionsEmployee">Institution's Employee</option>
+						<option value="Other">Other</option>
+					</select><br>
+				</div>
+				<div class="recommendeds">
+				Would you recommend this institution to a friend?<br>
+					<ul style="list-style: none;">
+						<li>
+							<input type="radio" id="definitely" name="recommend" value="0">
+							<label for="definitely">Definitely</label><br>
+						</li>
+						<li>
+							<input type="radio" id="maybe" name="recommend" value="0">
+							<label for="maybe">Maybe</label>
+						</li>
+						<li>
+							<input type="radio" id="no" name="recommend" value="0">
+							<label for="no">No</label>
+						</li>
+					</ul>
+				</div>
+				<div id="improvements">
+				<p>What you believe to be the most crutial thing or things that this institution should improve in the future?<br> (Choose the ones you believe to be the most important)</p>
+				<label for="aesthetic">Aesthetic</label>
+				<input type="checkbox" id="aesthetic" value="Aesthetic" name="improvement"><br>
+				<label for="green_area">Green Area</label>
+				<input type="checkbox" id="green_area"  value="GreenArea" name="improvement"><br>
+				<label for="courses">New Courses</label>
+				<input type="checkbox" id="courses"  value="Courses" name="improvement"><br>
+				<label for="infrastructure">Infrastructure</label>
+				<input type="checkbox" id="infrastructure"  value="Infrastructure" name="improvement"><br>
+				<div id="comment">
+					<p>Any comment or suggestion to our team?</p>
+				<textarea>
+				</textarea><br>
+				<button id="submit" type="Submit">Submit</button>
+			</form>
+		</section>
+	</main>
+</body>
+</html>

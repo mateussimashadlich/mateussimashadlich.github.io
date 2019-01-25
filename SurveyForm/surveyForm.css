@@ -1,0 +1,51 @@
+main {
+
+	margin-left: 5vw;
+	margin-right: 5vw;
+	background-color: green;
+	text-align: center;
+
+}
+input {
+	padding: 5px;
+
+}
+.form_rows {
+	padding-bottom: 3vh;
+
+}
+.form_rows label {
+	display: inline-block;
+}
+.form_rows input {
+	height: 20px;
+	border-radius: 4%;
+}
+form select {
+	padding: 5px;
+	margin-bottom: 3vh;
+}
+
+.recommendeds{
+	margin-bottom: 3vh;
+}
+
+input[type='radio'], input[type='checkbox'] {
+	transform: scale(1.15);	
+
+}
+.recommendeds label {
+	display: inline-block;
+	width: 10%;
+	text-align: left;
+
+}
+
+textarea {
+	display: inline-block;
+	justify-content: right;
+	width: 20%;
+	height: 80px;
+
+}
+
