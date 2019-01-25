@@ -4,14 +4,22 @@ body {
 }
 main {
 
-	margin-left: 10vw;
-	margin-right: 10vw;
+	margin-left: 9vw;
+	margin-right: 9vw;
 	box-shadow: 0 10px 30px green, 0 6px 6px green;	
 	text-align: center;
 	background-color: #FAFBFE;
 	border-style: solid;
 	border-color: green;
 
+}
+
+@media (max-width: 425px) {
+	main {
+
+		margin-left: 5vw;
+		margin-right: 5vw;
+	}
 }
 input, #submit {
 	padding: 5px;
