@@ -1,12 +1,19 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+	background-color: #DB3A34;
+}
 main {
 
-	margin-left: 5vw;
-	margin-right: 5vw;
-	background-color: green;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	box-shadow: 0 10px 30px green, 0 6px 6px green;	
 	text-align: center;
+	background-color: #FAFBFE;
+	border-style: solid;
+	border-color: green;
 
 }
-input {
+input, #submit {
 	padding: 5px;
 
 }
@@ -42,10 +49,13 @@ input[type='radio'], input[type='checkbox'] {
 }
 
 textarea {
-	display: inline-block;
-	justify-content: right;
-	width: 20%;
-	height: 80px;
+	width: 30%;
+	height: 15vh;
+	margin-bottom: 3vh;
 
 }
 
+#submit {
+	margin-bottom: 3vh;
+
+}
