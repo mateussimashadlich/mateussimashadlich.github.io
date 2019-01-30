@@ -5,29 +5,31 @@ header{
 	align-items: center;
 	background-color: #F4F6F9;
 	font-family: 'Baloo Thambi', cursive;
-	justify-content: space-between;
-}
-@media (max-width: 425px){
-	header {
-		flex-direction: column;
-		display: inline;
-	}
+	position: fixed;
+	width: 100vw;
+	top: 0;
 }
 #logo {
 	display: inline-flex;
 	align-items: center;
+	width: 60vw;
 }
 #logo p {
 	font-size: 36px;
 	padding-left: 30px;
-
+	top: 0;
 }
 
 #nav-bar ul li {
 	font-size: 22px;
-	padding: 15px;
+	padding-right: 10px;
 	display: inline;
 	list-style: none;
+}
+#nav-bar {
+	margin-top: 0px;
+	padding-top: 0px;
+
 }
 #nav-bar ul {
 	margin-right: 10vw;
@@ -36,6 +38,38 @@ header{
 #nav-bar a {
 	color: black;
 	text-decoration: none;
+}
+@media (max-width: 425px){
+	header {
+		flex-direction: column;
+		display: inline;
+		left: 0;
+		height:10vh;
+
+	}
+	#header-img {
+		display: none;
+
+	}
+	#logo {
+		width: 100vw;
+		text-align: center;
+	}
+	#logo p {
+		margin-top: 0vh;
+		padding-left: 0px;
+		font-size: 26px;
+		width: 100%;
+		margin-bottom: 0px;
+	}
+	#nav-bar ul{
+		margin-top: 0;
+		margin-right: 0;
+		padding-left: 0;
+		text-align: center;
+	}
+
+	
 }
 #presentation_image{
 	margin-left: 3vw;
@@ -54,8 +88,8 @@ section h1 {
 	border-style: solid;
 	border-color: black;
 	margin:0 auto;
-	
 	text-align: center;
+	margin-bottom: 20px;
 }
 #products {
 	margin-right: 10vw;
