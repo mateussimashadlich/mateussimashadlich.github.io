@@ -1,14 +1,30 @@
+section {
+  padding-top: 10vh;
+	margin-right: 5vw;
+	margin-left: 5vw;
+
+}
 header{
 	display: flex;
-	height: 19vh;
-	padding-bottom: 30px;
+	height: 12vh;
+  	padding-bottom: 10px;
 	align-items: center;
 	background-color: #F4F6F9;
 	font-family: 'Baloo Thambi', cursive;
 	position: fixed;
 	width: 100vw;
 	top: 0;
+	left: 0;
 }
+
+#header-img {
+  padding-top: 15px;
+  height: 12vh;
+}
+h1 {
+	font-family: 'Baloo Thambi', cursive;
+
+} 
 #logo {
 	display: inline-flex;
 	align-items: center;
@@ -23,13 +39,8 @@ header{
 #nav-bar ul li {
 	font-size: 22px;
 	padding-right: 10px;
-	display: inline;
+  display: inline;
 	list-style: none;
-}
-#nav-bar {
-	margin-top: 0px;
-	padding-top: 0px;
-
 }
 #nav-bar ul {
 	margin-right: 10vw;
@@ -63,26 +74,53 @@ header{
 		margin-bottom: 0px;
 	}
 	#nav-bar ul{
-		margin-top: 0;
-		margin-right: 0;
-		padding-left: 0;
 		text-align: center;
+    margin-top: 0px;
 	}
 
 	
 }
-#presentation_image{
-	margin-left: 3vw;
-	margin-right: 3vw;
-	max-height: 78vh;
-	max-width: 100%;
-	overflow: hidden;
+#presentation_image {
+  overflow: hidden;
+  
+}
+#presentation_image img{
+  	text-align: center;
+  	height: 100vh;
 }
 
 section h1 {
 	text-align: center;
 }
+section {
+	margin-top: 30px;
 
+}
+#material {
+	display: grid;
+	grid-template-areas:
+	"title title"
+	"paragraph image";
+	grid-column-gap: 30px;
+}
+#material p {
+	grid-area: paragraph;
+	font-size: 20px;
+	margin-top: 36px;
+	text-align: justify; 
+}
+#material h1 {
+	grid-area: title;
+}
+
+#material img {
+	grid-area: image;
+	width: 30vw;
+	height: auto;
+}
+#about p {
+	font-size: 20px;
+}
 .shirtitem {
 	width: 20vw;
 	border-style: solid;
@@ -103,13 +141,24 @@ section h1 {
 }
 
 .shirtimage {
-		max-width: 100%;
-		height: auto;
+	max-width: 100%;
+	height: auto;
 
 }
 
+#video {
+	max-width: 100%;
+	margin: 0 auto;
+	display: block;
+
+}
+
+.shirtitem button {
+	margin-bottom: 20px;
+
+}
 @media (max-width: 800px) {
-	#shirts {
+	#shirts{
 		grid-template-columns: 1fr;
 
 	}
@@ -117,5 +166,24 @@ section h1 {
 		width: 80vw;
 
 	}
+	#material {
+		grid-template-areas:
+		"title"
+		"paragraph"
+		"image";
+	} 
+	#material img {
+		width: 90vw;
+		height: auto;
+
+	}
 }
 
+#form {
+	text-align: center;
+}
+#form input {
+	font-size: 20px;
+	border-radius: 10%;
+	margin-bottom: 30px;
+}
