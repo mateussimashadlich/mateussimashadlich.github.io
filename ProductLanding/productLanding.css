@@ -1,16 +1,23 @@
+body {
+  font-family: 'Karla', serif;
+  
+}
 section {
   padding-top: 10vh;
 	margin-right: 5vw;
 	margin-left: 5vw;
 
 }
+h1, h2{
+  font-family: 'Rubik', sans-serif;
+}
+
 header{
 	display: flex;
 	height: 12vh;
-  	padding-bottom: 10px;
+  padding-bottom: 10px;
 	align-items: center;
 	background-color: #F4F6F9;
-	font-family: 'Baloo Thambi', cursive;
 	position: fixed;
 	width: 100vw;
 	top: 0;
@@ -22,7 +29,6 @@ header{
   height: 12vh;
 }
 h1 {
-	font-family: 'Baloo Thambi', cursive;
 
 } 
 #logo {
@@ -82,11 +88,12 @@ h1 {
 }
 #presentation_image {
   overflow: hidden;
+  text-align: center;
   
 }
 #presentation_image img{
-  	text-align: center;
-  	height: 100vh;
+	margin-left: 3vw;
+	margin-right: 3vw;
 }
 
 section h1 {
@@ -158,6 +165,10 @@ section {
 
 }
 @media (max-width: 800px) {
+  section {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 	#shirts{
 		grid-template-columns: 1fr;
 
@@ -186,4 +197,22 @@ section {
 	font-size: 20px;
 	border-radius: 10%;
 	margin-bottom: 30px;
+}
+
+.select_btn {
+  text-decoration: none;
+  text-shadow: 0px -1px 0px rgba(0,0,0,.5);
+  background-color: #9B7E46;
+  padding: 12px;
+  color: #F1F7F0;
+  box-shadow: 0 6px 0px #554527, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  
+}
+.select_btn:active {
+   box-shadow: 0px 3px 0 #554527;
+   transform: translateY(2px);
+  
 }
