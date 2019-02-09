@@ -71,7 +71,7 @@ header{
 		font-size: 1.5em;
 	}
 	#presentation_image img {
-		width: default;
+		width: auto!important;
 	}
 	header {
 		flex-direction: column;
