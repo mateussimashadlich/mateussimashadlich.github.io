@@ -2,10 +2,14 @@ body {
   font-family: 'Karla', serif;
   
 }
+p {
+	margin-bottom: 48px;
+}
 section {
-  padding-top: 10vh;
-	margin-right: 5vw;
-	margin-left: 5vw;
+	padding-top: 10vh;
+	margin-right: 10vw;	
+	margin-left: 10vw;
+	margin-bottom: 48px;
 
 }
 h1, h2{
@@ -15,27 +19,26 @@ h1, h2{
 header{
 	display: flex;
 	height: 12vh;
-  padding-bottom: 10px;
+  	padding-bottom: 10px;
 	align-items: center;
 	background-color: #F4F6F9;
 	position: fixed;
 	width: 100vw;
 	top: 0;
 	left: 0;
+	box-shadow: 0px 1px 6px rgba(0,0,0,.4);
 }
 
 #header-img {
   padding-top: 15px;
   height: 12vh;
 }
-h1 {
-
-} 
 #logo {
 	display: inline-flex;
 	align-items: center;
 	width: 60vw;
 }
+
 #logo p {
 	font-size: 36px;
 	padding-left: 30px;
@@ -44,12 +47,17 @@ h1 {
 
 #nav-bar ul li {
 	font-size: 22px;
-	padding-right: 10px;
-  display: inline;
+	margin-right: 10px;
+  	display: inline;
 	list-style: none;
 }
-#nav-bar ul {
-	margin-right: 10vw;
+#nav-bar ul li:hover {
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-bottom-color: black;
+	
+
+
 
 }
 #nav-bar a {
@@ -57,6 +65,9 @@ h1 {
 	text-decoration: none;
 }
 @media (max-width: 425px){
+	#presentation_image .description h1{
+		font-size: 1.5em;
+	}
 	header {
 		flex-direction: column;
 		display: inline;
@@ -81,19 +92,39 @@ h1 {
 	}
 	#nav-bar ul{
 		text-align: center;
-    margin-top: 0px;
+    	margin-top: 0px;
+		padding-left: 0px;
 	}
-
-	
 }
 #presentation_image {
   overflow: hidden;
-  text-align: center;
-  
+  position: relative;
+  z-index: -1;
+
 }
+#presentation_image:after {
+	content:'';
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color: rgba(0,0,0,0.01);
+
+}
+#presentation_image .description {
+	position: absolute;
+	top: 40%;
+	color: white;
+	text-align: center;
+	width: 100%;
+	background-color: rgba(0,0,0,0.2);
+}
+
 #presentation_image img{
-	margin-left: 3vw;
-	margin-right: 3vw;
+	height: 100vh;
+	width: 100vw;
+	filter: grayscale(0%) blur(1px);
 }
 
 section h1 {
@@ -114,7 +145,7 @@ section {
 	grid-area: paragraph;
 	font-size: 20px;
 	margin-top: 36px;
-	text-align: justify; 
+	 
 }
 #material h1 {
 	grid-area: title;
@@ -136,10 +167,7 @@ section {
 	text-align: center;
 	margin-bottom: 20px;
 }
-#products {
-	margin-right: 10vw;
-	margin-left: 10vw;
-}
+
 
 #shirts {
 
@@ -168,6 +196,7 @@ section {
   section {
     margin-left: 16px;
     margin-right: 16px;
+    font-size: 16px;
   }
 	#shirts{
 		grid-template-columns: 1fr;
@@ -205,7 +234,8 @@ section {
   background-color: #9B7E46;
   padding: 12px;
   color: #F1F7F0;
-  box-shadow: 0 6px 0px #554527, 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  box-shadow: 0 6px 0px #554527, 0px 3px 15px rgba(0,0,0,.4), 
+  inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
   border: none;
   border-radius: 10%;
   cursor: pointer;
