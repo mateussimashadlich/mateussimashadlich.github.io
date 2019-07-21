@@ -2,8 +2,8 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="productLanding.css">
-	<link rel="shortcut icon" type="image/png" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="../static/productLanding.css">
+	<link rel="shortcut icon" type="image/png" href="../static/favicon.ico">
 	<link href="https://fonts.googleapis.com/css?family=Karla|Rubik" rel="stylesheet">
 
   <title>Simon Hemp Clothing</title>
@@ -17,7 +17,10 @@
 			<ul>
 				<li><a class="nav-link" href="#material">Material</a></li>
 				<li><a class="nav-link" href="#products">Products</a></li>
-				<li><a class="nav-link" href="#about">About</a></li>	
+				<li><a class="nav-link" href="#about">About</a></li>
+				<!--<li><a class="nav-link" href="#">Login</a></li>
+				<li>|</li> 
+				<li><a class="nav-link" href="#">Register</a></li>*/-->
 			</ul>
 		</nav>
 	</header>
@@ -49,29 +52,18 @@
 	<section id="products">
 		<h1>Shirts</h1>
 		<div id="shirts">
+			{% for i in products %}
+			{{i.name}}
 			<div class="shirtitem">
 				<figure>
-				<img src="https://i.postimg.cc/d14MyrR2/shirt1.jpg" class="shirtimage" alt="shirt">
-				<figcaption>Stylish Shirt</figcaption>
+				<img src="{{i.image}}" class="shirtimage" alt="shirt">
+				<figcaption>{{i.name}}</figcaption>
 				</figure>
-				<p>CR$500</p>
+				<p>{{i.price}}</p>
 				<button class="select_btn">SELECT</button>
 			</div>
-			<div class="shirtitem">
-				<figure>
-				<img src="https://i.postimg.cc/yNCz4VYZ/shirt2.jpg" class="shirtimage" alt="shirt">
-				<figcaption>Green T-Shirt</figcaption>
-				</figure>
-				<p>CR$80</p>
-				<button class="select_btn">SELECT</button>
-			</div>
-			<div class="shirtitem">
-				<figure>
-				<img src="https://i.postimg.cc/W4mcsQhf/shirt3.png" class="shirtimage" alt="shirt">
-				<figcaption>Mo Boy T-Shirt</figcaption>
-				</figure>
-				<p>CR$120</p>
-				<button class="select_btn">SELECT</button>
+			{% endfor %}
+			
 			</div>
 		</div>
 	</section>
