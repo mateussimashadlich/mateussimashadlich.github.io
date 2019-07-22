@@ -16,7 +16,6 @@ h1, h2{
 
 header{
 	display: flex;
-	height: 12vh;
   	padding-bottom: 10px;
 	align-items: center;
 	background-color: #F4F6F9;
