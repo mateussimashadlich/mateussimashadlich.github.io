@@ -52,17 +52,30 @@
 	<section id="products">
 		<h1>Shirts</h1>
 		<div id="shirts">
-			{% for i in products %}
-			{{i.name}}
 			<div class="shirtitem">
 				<figure>
-				<img src="{{i.image}}" class="shirtimage" alt="shirt">
-				<figcaption>{{i.name}}</figcaption>
+				<img src="shirt1.jpg" class="shirtimage" alt="shirt">
+				<figcaption>shirt1</figcaption>
 				</figure>
-				<p>{{i.price}}</p>
+				<p>R$50,00</p>
 				<button class="select_btn">SELECT</button>
 			</div>
-			{% endfor %}
+			<div class="shirtitem">
+				<figure>
+				<img src="shirt2.jpg" class="shirtimage" alt="shirt">
+				<figcaption>shirt2</figcaption>
+				</figure>
+				<p>R$50,00</p>
+				<button class="select_btn">SELECT</button>
+			</div>
+			<div class="shirtitem">
+				<figure>
+				<img src="shirt3.png" class="shirtimage" alt="shirt">
+				<figcaption>shirt3</figcaption>
+				</figure>
+				<p>R$50,00</p>
+				<button class="select_btn">SELECT</button>
+			</div>
 			
 			</div>
 		</div>
